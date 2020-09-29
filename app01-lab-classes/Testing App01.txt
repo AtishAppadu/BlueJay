@@ -1,0 +1,5 @@
+LabClass Lab01 = new LabClass(3);
+Student John = new Student("John", "2002035");
+Student James = new Student("James" , "3323521");
+Student Lillia = new Student("Lillia" , "55320235");
+John.addCredits(20);
