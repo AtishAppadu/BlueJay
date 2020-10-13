@@ -1,0 +1,17 @@
+Ticket ticket1 = new Ticket("Ay", 220);
+Ticket ticket1 = new Ticket("ay", 220);
+ticket1.print();
+ay
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+Aylesbury
+220
+Tue Oct 13 14:30:34 BST 2020
+Ticket ticket1 = new Ticket("Aylesbury", 220);
+ticket1.print();
+ticket to Aylesbury
+cost 220P 
+ Issued: Tue Oct 13 14:32:55 BST 2020
+TicketMachine ticketMa1 = new TicketMachine();
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insert20p();

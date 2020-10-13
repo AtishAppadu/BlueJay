@@ -8,7 +8,9 @@ import java.util.*;
  * @version 2016.02.29
  */
 public class Student
-{
+{ 
+ private Course manufacturer; 
+ 
     // the student's full name
     private String name;
     // the student ID
