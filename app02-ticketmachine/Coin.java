@@ -1,17 +1,18 @@
 
 /**
- * Write a description of class Coin here.
+ * Enumeration class Coin - write a description of the enum class here
  *
  * @author (Atish)
- * @version (06/10/2020)
+ * @version (19/10/2020)
  */
+
 public class Coin
 {
     // instance variables - replace the example below with your own
     private int price;
 
     /**
-     * Constructor for objects of class Coin
+     * Constructor for objects of class CopyOfCoin
      */
     public Coin(int price)
     {
@@ -31,4 +32,25 @@ public class Coin
        return price; 
        
     }
+    
+    public enum CopyOfCoin
+    {
+        P10 (10),
+        P20 (20),
+        P100 (100),
+        P200 (200);
+
+        private final int value;
+
+        private CopyOfCoin(int value)
+        {
+            this.value = value;
+        }
+
+        public int getValue()
+        {
+            return value;
+        }
+     }
 }
+

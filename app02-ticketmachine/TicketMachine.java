@@ -74,23 +74,30 @@ public void insertcoin(Coin coin)
         }
     }
 
-    public void insertCoin(Coin coin) {
-    
-        if (coin.getPrice() == 10){
-            System.out.println(" You just inserted 10p");
-            balance = balance + coin.getPrice();
-        }
     
     
-    }
-    
-    public void insert20p()
+     public void insert20p()
 {
     balance = balance + 20;
     
     insertMoney(20);
 }
 
+    public void insert£1()
+    {
+        balance = balance + 1; 
+        
+        insertMoney(1);
+    }
+    
+    public void insert£2()
+{   
+    balance = balance + 2; 
+    
+    insertMoney(2);
+}
+
+    
     /**
      * Print a ticket if enough money has been inserted, and
      * reduce the current balance by the ticket price. Print

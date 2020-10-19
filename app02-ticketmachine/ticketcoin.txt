@@ -1,0 +1,17 @@
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insert£1();
+ticketMa1.insert£2();
+ticketMa1.printTicket();
+You must insert at least: 214 more cents.
+ticketMa1.getBalance()
+    returned int 6
+Ticket Aylesbury = new Ticket("Aylesbury", 220);
+Aylesbury.print();
+ticket to Aylesbury
+cost 220P 
+ Issued: Mon Oct 19 19:37:07 BST 2020
+Coin tenP = new Coin(10);
+tenP.getPrice()
+    returned int 10
+Aylesbury.getDestinaion()
+    returned String "Aylesbury"
