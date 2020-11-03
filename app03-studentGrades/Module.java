@@ -2,49 +2,122 @@
 /**
  * Write a description of class Module here.
  *
- * @author (Atish  )
+ * @author (Atish)
  * @version (23/10/2020)
  */
 public class Module
 {
     // instance variables - replace the example below with your own
     private String title; 
-    private int moduleCode; 
-    private int percentage; 
+    private String moduleCode; 
+    private int mark; 
+    private boolean complete;
 
     /**
      * Constructor for objects of class Module
      */
-    public Module(String title, int moduleCode, int percentage)
+    public Module(String title, String moduleCode)
     {
         // initialise instance variables
-        title = title; 
-        moduleCode = moduleCode; 
-        percentage = percentage;
+        this.title = title; 
+        this.moduleCode = moduleCode;
+        mark = 0;
+        complete = false; 
+        
+      
+        
     }
-
+    
+    public void mark(int mark) 
+    {   
+        if (( mark >= 0 ) && ( mark <=100 )) 
+        {   
+            this.mark = mark; 
+            if (mark >= 40) complete = true ; 
+            
+        }
+        
+        else 
+        {   
+            System.out.print(" invalid mark " ); 
+        }
+    }
+    
+    
+    
+    
     public String getTitle()  
     {
         // put your code here
-        return title;
+        return this.title;
+        
 
     }
+    
+    public void setTitle()
+    {   
+        this.title = title; 
+    }
 
-
-    public int getmoduleCode()  
+    public String getmoduleCode()  
     {
         // put your code here
-        return moduleCode;
+        return this.moduleCode;
 
     }
-
-    public int getPercentage()  
+    
+    public void setModuleCode() 
+    {   
+        this.moduleCode = moduleCode; 
+    }
+    
+    public int getMark()  
     {
         // put your code here
-        return percentage;
+        return this.mark;
 
     }
+    
+    public void setMark(int mark )
+    {   
+        this.mark = mark ; 
+    }
+    
+    public boolean iscomplete()
+    {   
+        return this.complete; 
+    
+   
 
+    }
+    
+    public void setComplete(boolean complete)
+   
+    {   
+        this.complete = complete; 
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}   
 
-
-}
