@@ -1,0 +1,112 @@
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insertCoin(Coin.P10);
+10Pennies inserted
+youre balance is10
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insertCoin(Coin.P20);
+20 Pennies inserted 
+ youre balance is 20
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.insertCoin(Coin.P10);
+10 Pennies inserted 
+ youre balance is 10
+ticketMa1.selectAmersham();
+ticketMa1.printTicket();
+You must insert at least: 210 more cents.
+ticketMa1.printBalance();
+ youre balance is 10
+ticketMa1.insertCoin(Coin.P200);
+200 Pennies inserted 
+ youre balance is 210
+ticketMa1.insertCoin(Coin.P10);
+10 Pennies inserted 
+ youre balance is 220
+ticketMa1.selectAmersham();
+ticketMa1.selectAylesbury();
+ticketMa1.printTicket();
+##################
+# The BlueJ Line
+# Ticket
+# 220 cents.
+##################
+
+TicketMachine ticketMa1 = new TicketMachine();
+ticketMa1.selectAylesbury();
+ticketMa1.printTicket();
+You must insert at least: 220 more cents.
+ticketMa1.insertCoin(Coin.P10);
+10 Pennies inserted 
+ youre balance is 10
+ticketMa1.refundBalance()
+    returned int 10
+ticketMa1.printBalance();
+ youre balance is 0
+ticketMa1.insertCoin(Coin.P200);
+200 Pennies inserted 
+ youre balance is 200
+ticketMa1.insertCoin(Coin.P200);
+200 Pennies inserted 
+ youre balance is 400
+ticketMa1.insertCoin(Coin.P200);
+200 Pennies inserted 
+ youre balance is 600
+ticketMa1.insertCoin(Coin.P200);
+200 Pennies inserted 
+ youre balance is 800
+ticketMa1.selectAylesbury();
+ticketMa1.print();
+ Issued: Tue Nov 03 13:29:37 GMT 2020
+##################
+Aylesbury
+# Ticket
+# 220 cents.
+##################
+
+ youre balance is 580
+ticketMa1.selectAmersham();
+ticketMa1.printTicket();
+##################
+
+# Ticket
+# 220 cents.
+##################
+
+ticketMa1.print();
+ Issued: Tue Nov 03 13:29:37 GMT 2020
+##################
+Amersham
+# Ticket
+# 300 cents.
+##################
+
+ youre balance is 60
+ticketMa1.insertCoin(Coin.P200);
+200 Pennies inserted 
+ youre balance is 260
+ticketMa1.selectHighwycombe();
+ticketMa1.insertCoin(Coin.P200);
+200 Pennies inserted 
+ youre balance is 460
+ticketMa1.selectHighwycombe();
+ticketMa1.printTicket();
+##################
+
+# Ticket
+# 220 cents.
+##################
+
+ticketMa1.print();
+ticketMa1.print();
+ticketMa1.insertCoin(Coin.P200);
+200 Pennies inserted 
+ youre balance is 440
+ticketMa1.selectHighwycombe();
+ticketMa1.print();
+ Issued: Tue Nov 03 13:29:37 GMT 2020
+##################
+HighWycombe
+# Ticket
+# 330 cents.
+##################
+
+ youre balance is 110
