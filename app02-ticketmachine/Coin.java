@@ -1,56 +1,29 @@
 
 /**
- * Enumeration class Coin - write a description of the enum class here
+ * Enumeration class Coin - This is a coin class which detemines the input 
+ * value. 
  *
- * @author (Atish)
- * @version (19/10/2020)
+ * @author (Atish )
+ * @version (03/11/2020)
  */
 
-public class Coin
-{
-    // instance variables - replace the example below with your own
-    private int price;
-
-    /**
-     * Constructor for objects of class CopyOfCoin
-     */
-    public Coin(int price)
-    {
-        // initialise instance variables
-       this.price = price;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int getPrice()
-    {
-        // put your code here
-       return price; 
-       
-    }
-    
-    public enum CopyOfCoin
+public enum Coin
     {
         P10 (10),
         P20 (20),
         P100 (100),
         P200 (200);
 
-        private final int value;
+        private final int price;
 
-        private CopyOfCoin(int value)
+        private Coin(int price)
         {
-            this.value = value;
+            this.price = price;
         }
-
-        public int getValue()
+        
+        
+        public int getPrice()
         {
-            return value;
+            return price;
         }
      }
-}
-

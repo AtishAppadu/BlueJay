@@ -26,12 +26,17 @@ public class Ticket
         this.price = price;  
         timeStamp = new Date();
     }
-
+    
+    
+    public int getPrice() 
+    {   
+        return price ; 
+    }
     
     /**
      * Return the ticket's destination as a string. 
      */
-    public String getDestinaion()
+    public String getDestination()
     {
         return destination; 
     }
@@ -42,9 +47,16 @@ public class Ticket
        */
     public void print()
     {
-        System.out.println("ticket to " + destination);
-        System.out.println("cost " + price + "P ");
+        
         System.out.println(" Issued: " + timeStamp);
+        System.out.println("##################");
+        
+        System.out.println(destination); 
+        System.out.println("# Ticket");
+            System.out.println("# " + price + " cents.");
+            System.out.println("##################");
+            System.out.println();
+
         
     }
 }

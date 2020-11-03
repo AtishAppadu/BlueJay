@@ -11,6 +11,7 @@
  * 
  * Modified by Atish
  */
+
 public class TicketMachine
 {
     
@@ -20,10 +21,12 @@ public class TicketMachine
     // The total amount of money collected by this machine.
     private int total;
 
-    private Ticket aylesburyTicket; 
-    private Ticket highwycombeTicket;
-    private Ticket amershamTicket;
+    public static final Ticket  aylesburyTicket = new Ticket("Aylesbury",220); 
+    public static final Ticket  amershamTicket = new Ticket("Amersham",300);
+    public static final Ticket  highwycombeTicket = new Ticket("HighWycombe",330);
     
+    private Ticket userTicket; 
+
     /**
      * Create a machine that issues tickets of the given price.
      */
@@ -31,14 +34,9 @@ public class TicketMachine
     {
         balance = 0;
         total = 0;
-        
-        aylesburyTicket = new Ticket("Aylesbury", 220); 
-        highwycombeTicket = new Ticket("High Wycombe", 330);
-        amershamTicket = new Ticket("Amersham", 300); 
+        userTicket = null; 
         
     }
-
-   
 
     /**
      * Return The amount of money already inserted for the
@@ -46,26 +44,32 @@ public class TicketMachine
      */
     public int getBalance()
     {
-        return balance;
+        return balance; 
     }
-
-
-public void insertcoin(Coin coin)
-{
+    
+    public void printBalance() 
+    {   
+        System.out.println(" youre balance is "  +  balance);  
+    }
+    
+    public void insertCoin(Coin coin) 
+    {       
+        System.out.println(coin.getPrice() + " Pennies inserted " );
+        balance = balance + coin.getPrice(); 
+        printBalance(); 
+    }
     
     
-    
-}
-
     /**
      * Receive an amount of money from a customer.
-     * Check that the amount is sensible.
+     * Check that the amount is adequate.
      */
     public void insertMoney(int amount)
     {
         if(amount > 0) 
         {
             balance = balance + amount;
+            printBalance();
         }
         else 
         {
@@ -74,14 +78,12 @@ public void insertcoin(Coin coin)
         }
     }
 
-    
-    
      public void insert20p()
-{
-    balance = balance + 20;
+     {
+         balance = balance + 20;
     
-    insertMoney(20);
-}
+         insertMoney(20);
+    }   
 
     public void insert£1()
     {
@@ -91,12 +93,40 @@ public void insertcoin(Coin coin)
     }
     
     public void insert£2()
-{   
-    balance = balance + 2; 
+    {   
+       balance = balance + 2; 
     
-    insertMoney(2);
-}
+       insertMoney(2);
+    }
 
+    public void selectAylesbury() 
+    {   
+        userTicket = aylesburyTicket; 
+    }
+    
+    public void selectAmersham() 
+    {   
+        userTicket = amershamTicket; 
+    }      
+    
+    public void selectHighwycombe() 
+    {   
+        userTicket = highwycombeTicket; 
+    }
+   
+    public void print() 
+    {   
+        if (balance >= userTicket.getPrice ()) 
+        {   
+            userTicket.print();
+            balance = balance - userTicket.getPrice(); 
+            printBalance(); 
+        }
+            
+    } 
+    
+    
+    
     
     /**
      * Print a ticket if enough money has been inserted, and
@@ -110,7 +140,7 @@ public void insertcoin(Coin coin)
         {
             // Simulate the printing of a ticket.
             System.out.println("##################");
-            System.out.println("# The BlueJ Line");
+            System.out.println();
             System.out.println("# Ticket");
             System.out.println("# " + price + " cents.");
             System.out.println("##################");
