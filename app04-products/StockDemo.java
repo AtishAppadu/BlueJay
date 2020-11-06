@@ -21,22 +21,22 @@ public class StockDemo
      * this product list contains 10 different products from the same company with different id's.
      * .
      */
-    public StockDemo()
+    public StockDemo(StockManager manager)
     {
         this.manager = manager;
         
         randomGenerator = new Random();
         
-        manager.addProduct(new Product(132, "Razer BlackWidow mechanical keyboard"));
-        manager.addProduct(new Product(37,  "Razer Tournament keyboard"));
-        manager.addProduct(new Product(23,  "Razer ornata"));
-        manager.addProduct(new Product(15, "Razer blackwidow ultimate"));
-        manager.addProduct(new Product(14, "Razer Huntsman Elite"));    
-        manager.addProduct(new Product(13, "Razer huntsman Mini"));
-        manager.addProduct(new Product(12, "Razer deathadder Mouse")); 
-        manager.addProduct(new Product(11, "Razer viper mouse"));  
-        manager.addProduct(new Product(10,  "Razer Deathadder V2 Mouse"));
-        manager.addProduct(new Product(9,   "Razer Siren Cardoid Microphone"));
+        manager.addProduct(new Product(101, "Razer BlackWidow mechanical keyboard"));
+        manager.addProduct(new Product(102,  "Razer Tournament keyboard"));
+        manager.addProduct(new Product(103,  "Razer ornata"));
+        manager.addProduct(new Product(104, "Razer blackwidow ultimate"));
+        manager.addProduct(new Product(105, "Razer Huntsman Elite"));    
+        manager.addProduct(new Product(106, "Razer huntsman Mini"));
+        manager.addProduct(new Product(107, "Razer deathadder Mouse")); 
+        manager.addProduct(new Product(108, "Razer viper mouse"));  
+        manager.addProduct(new Product(109,  "Razer Deathadder V2 Mouse"));
+        manager.addProduct(new Product(110,   "Razer Siren Cardoid Microphone"));
         
     }
     
@@ -130,4 +130,6 @@ public class StockDemo
     {
         return manager;
     }
+
+    
 }

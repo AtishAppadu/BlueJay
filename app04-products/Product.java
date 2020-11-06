@@ -93,17 +93,13 @@ public class Product
     
     }
 
+    
     public void renameProduct(int id) 
     {   
         this.name = name; 
     }
     
     
-
-
-
-    
-
 
 }
 
