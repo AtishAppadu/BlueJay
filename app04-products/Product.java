@@ -6,15 +6,12 @@
  */
 public class Product
 {
-    // An identifying number for this product.
     private int id;
-    // The name of this product.
     private String name;
-    // The quantity of this product in stock.
     private int quantity;
 
     /**
-     * Constructor for objects of class Product.
+       * Constructor for objects of class Product.
      * The initial stock quantity is zero.
      * @param id The product's identifying number.
      * @param name The product's name.
@@ -64,7 +61,7 @@ public class Product
      * @param amount The number of new items added to the stock.
      *               This must be greater than zero.
      */
-    public void increaseQuantity(int amount)
+    public void deliver(int amount)
     {
         if(amount > 0) 
         {
@@ -92,5 +89,21 @@ public class Product
             System.out.println(
                 "Attempt to sell an out of stock item: " + name);
         }
+  
+    
     }
+
+    public void renameProduct(int id) 
+    {   
+        this.name = name; 
+    }
+    
+    
+
+
+
+    
+
+
 }
+

@@ -1,3 +1,7 @@
+import java.util.Random;
+
+
+
 /**
  * Demonstrate the StockManager and Product classes.
  * The demonstration becomes properly functional as
@@ -11,17 +15,29 @@ public class StockDemo
 {
     // The stock manager.
     private StockManager manager;
+    private Random randomGenerator; 
 
     /**
-     * Create a StockManager and populate it with a few
-     * sample products.
+     * this product list contains 10 different products from the same company with different id's.
+     * .
      */
     public StockDemo()
     {
-        manager = new StockManager();
-        manager.addProduct(new Product(132, "Clock Radio"));
-        manager.addProduct(new Product(37,  "Mobile Phone"));
-        manager.addProduct(new Product(23,  "Microwave Oven"));
+        this.manager = manager;
+        
+        randomGenerator = new Random();
+        
+        manager.addProduct(new Product(132, "Razer BlackWidow mechanical keyboard"));
+        manager.addProduct(new Product(37,  "Razer Tournament keyboard"));
+        manager.addProduct(new Product(23,  "Razer ornata"));
+        manager.addProduct(new Product(15, "Razer blackwidow ultimate"));
+        manager.addProduct(new Product(14, "Razer Huntsman Elite"));    
+        manager.addProduct(new Product(13, "Razer huntsman Mini"));
+        manager.addProduct(new Product(12, "Razer deathadder Mouse")); 
+        manager.addProduct(new Product(11, "Razer viper mouse"));  
+        manager.addProduct(new Product(10,  "Razer Deathadder V2 Mouse"));
+        manager.addProduct(new Product(9,   "Razer Siren Cardoid Microphone"));
+        
     }
     
     /**
@@ -29,13 +45,14 @@ public class StockDemo
      * might be used. Details of one product are shown, the
      * product is restocked, and then the details are shown again.
      */
-    public void demo()
+    public void runDemo()
     {
-        // Show details of all of the products.
-        manager.printProductDetails();
-        // Take delivery of 5 items of one of the products.
-        manager.delivery(132, 5);
-        manager.printProductDetails();
+        manager.printAllproducts(); 
+        demoDeliverproducts(); 
+        manager.printAllproducts();
+        demoSellProduct(); 
+        manager.printAllproducts();
+        
     }
     
     /**
@@ -58,17 +75,35 @@ public class StockDemo
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int id)
+    private void demoSellProduct()
     {
-        Product product = getProduct(id);
+        int quantity = 0;
         
-        if(product != null) 
+        for (int id = 101; id < 110; id++)
         {
-            showDetails(id);
-            product.sellOne();
-            showDetails(id);
+            quantity = randomGenerator.nextInt(4); 
+            manager.sellProduct(id, quantity); 
         }
     }
+    
+    private void demoDeliverproducts() 
+    {   
+        int quantity = 0;
+        
+        for (int id = 101; id < 110; id++)
+        {   
+            quantity = randomGenerator.nextInt(5) +1;
+            manager.deliverProduct(id, quantity); 
+            
+        }
+        
+     
+    }
+    
+    
+    
+    
+    
     
     /**
      * Get the product with the given id from the manager.

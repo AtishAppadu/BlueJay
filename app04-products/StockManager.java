@@ -29,14 +29,46 @@ public class StockManager
         stock.add(item);
     }
     
+    
+    
+    public void sellProduct(int id, int quantity)
+    {   
+        Product product = findProduct(id) ; 
+        
+        if (product != null) 
+        {   
+            if (quantity > product.getQuantity()) 
+                quantity = product.getQuantity(); 
+            printProduct(id);
+            
+            for (int count = 0; count <= quantity; count++)
+            {   
+                product.sellOne(); 
+                
+        
+            }
+            printProduct(id); 
+            
+        }
+        
+    } 
+    
+    
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
      * @param id The ID of the product.
      * @param amount The amount to increase the quantity by.
      */
-    public void delivery(int id, int amount)
-    {
+    public void deliverProduct(int id, int amount)
+    {   
+        Product product = findProduct(id);
+        
+        if( product != null ) 
+            product.deliver(amount);
+        else 
+            System.out.println("Product ID not found = "+id); 
+         
     }
     
     /**
@@ -46,6 +78,13 @@ public class StockManager
      */
     public Product findProduct(int id)
     {
+        for( Product product: stock) 
+        {   
+            if ( product.getID() == id ) 
+            {   
+                return product; 
+            }
+        }
         return null;
     }
     
@@ -64,7 +103,46 @@ public class StockManager
     /**
      * Print details of all the products.
      */
-    public void printProductDetails()
-    {
+    public void printAllproducts()
+    {   
+        System.out.println(); 
+        System.out.println("Razer's Stock List"); 
+        System.out.println("==================="); 
+        System.out.println(); 
+        System.out.println(); 
+        
+        for (Product product : stock)
+        {   
+             System.out.println(product); 
+        
+        }
+        
+        System.out.println(); 
+
+    
+    
+    
     }
+
+    
+    public void printProduct(int id)
+    {       
+        Product product = findProduct(id); 
+        
+        if (product != null)
+        {   
+             System.out.println(product.toString()); 
+        } 
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
