@@ -41,9 +41,8 @@ public class StockDemo
     }
     
     /**
-     * Provide a very simple demonstration of how a StockManager
-     * might be used. Details of one product are shown, the
-     * product is restocked, and then the details are shown again.
+     *  Details of one product are shown, the
+     * product is restocked, and then the details are shown.
      */
     public void runDemo()
     {
@@ -56,9 +55,9 @@ public class StockDemo
     }
     
     /**
-     * Show details of the given product. If found,
+     * Show details of the given product. If the product has been found,
      * its name and stock quantity will be shown.
-     * @param id The ID of the product to look for.
+     * 
      */
     public void showDetails(int id)
     {
@@ -71,9 +70,8 @@ public class StockDemo
     }
     
     /**
-     * Sell one of the given item.
-     * Show the before and after status of the product.
-     * @param id The ID of the product being sold.
+     * Sell one of the product.
+     * 
      */
     private void demoSellProduct()
     {
