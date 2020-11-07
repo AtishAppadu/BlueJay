@@ -1,0 +1,164 @@
+StockManager stockMan1 = new StockManager();
+StockDemo stockDem1 = new StockDemo(stockMan1);
+stockMan1.renameProduct(101 , " Razer Chroma mouse pad" );
+ You have renamed Razer BlackWidow mechanical keyboard to  Razer Chroma mouse pad
+stockMan1.searchByName("Siren Cardoid " );
+stockMan1.searchByName("razer siren cardoid");
+stockMan1.searchByName("Razer ornata" );
+103: Razer ornata stock level: 0
+stockDem1.runDemo();
+
+Razer's Stock List
+===================
+
+
+101:  Razer Chroma mouse pad stock level: 0
+102: Razer Tournament keyboard stock level: 0
+103: Razer ornata stock level: 0
+104: Razer blackwidow ultimate stock level: 0
+105: Razer Huntsman Elite stock level: 0
+106: Razer huntsman Mini stock level: 0
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 0
+109: Razer Deathadder V2 Mouse stock level: 0
+110: Razer Siren Cardoid Microphone stock level: 0
+
+
+Razer's Stock List
+===================
+
+
+101:  Razer Chroma mouse pad stock level: 4
+102: Razer Tournament keyboard stock level: 5
+103: Razer ornata stock level: 5
+104: Razer blackwidow ultimate stock level: 3
+105: Razer Huntsman Elite stock level: 4
+106: Razer huntsman Mini stock level: 4
+107: Razer deathadder Mouse stock level: 1
+108: Razer viper mouse stock level: 5
+109: Razer Deathadder V2 Mouse stock level: 4
+110: Razer Siren Cardoid Microphone stock level: 0
+
+101:  Razer Chroma mouse pad stock level: 4
+101:  Razer Chroma mouse pad stock level: 1
+102: Razer Tournament keyboard stock level: 5
+102: Razer Tournament keyboard stock level: 3
+103: Razer ornata stock level: 5
+103: Razer ornata stock level: 2
+104: Razer blackwidow ultimate stock level: 3
+104: Razer blackwidow ultimate stock level: 1
+105: Razer Huntsman Elite stock level: 4
+105: Razer Huntsman Elite stock level: 2
+106: Razer huntsman Mini stock level: 4
+106: Razer huntsman Mini stock level: 0
+107: Razer deathadder Mouse stock level: 1
+Attempt to sell an out of stock item: Razer deathadder Mouse
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 5
+108: Razer viper mouse stock level: 3
+109: Razer Deathadder V2 Mouse stock level: 4
+109: Razer Deathadder V2 Mouse stock level: 2
+
+Razer's Stock List
+===================
+
+
+101:  Razer Chroma mouse pad stock level: 1
+102: Razer Tournament keyboard stock level: 3
+103: Razer ornata stock level: 2
+104: Razer blackwidow ultimate stock level: 1
+105: Razer Huntsman Elite stock level: 2
+106: Razer huntsman Mini stock level: 0
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 3
+109: Razer Deathadder V2 Mouse stock level: 2
+110: Razer Siren Cardoid Microphone stock level: 0
+
+StockManager stockMan1 = new StockManager();
+StockDemo stockDem1 = new StockDemo(stockMan1 );
+stockDem1.runDemo();
+
+Razer's Stock List
+===================
+
+
+101: Razer BlackWidow mechanical keyboard stock level: 0
+102: Razer Tournament keyboard stock level: 0
+103: Razer ornata stock level: 0
+104: Razer blackwidow ultimate stock level: 0
+105: Razer Huntsman Elite stock level: 0
+106: Razer huntsman Mini stock level: 0
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 0
+109: Razer Deathadder V2 Mouse stock level: 0
+110: Razer Siren Cardoid Microphone stock level: 0
+
+
+Razer's Stock List
+===================
+
+
+101: Razer BlackWidow mechanical keyboard stock level: 5
+102: Razer Tournament keyboard stock level: 5
+103: Razer ornata stock level: 4
+104: Razer blackwidow ultimate stock level: 3
+105: Razer Huntsman Elite stock level: 4
+106: Razer huntsman Mini stock level: 2
+107: Razer deathadder Mouse stock level: 1
+108: Razer viper mouse stock level: 5
+109: Razer Deathadder V2 Mouse stock level: 5
+110: Razer Siren Cardoid Microphone stock level: 0
+
+101: Razer BlackWidow mechanical keyboard stock level: 5
+101: Razer BlackWidow mechanical keyboard stock level: 3
+102: Razer Tournament keyboard stock level: 5
+102: Razer Tournament keyboard stock level: 3
+103: Razer ornata stock level: 4
+103: Razer ornata stock level: 3
+104: Razer blackwidow ultimate stock level: 3
+104: Razer blackwidow ultimate stock level: 0
+105: Razer Huntsman Elite stock level: 4
+105: Razer Huntsman Elite stock level: 0
+106: Razer huntsman Mini stock level: 2
+106: Razer huntsman Mini stock level: 1
+107: Razer deathadder Mouse stock level: 1
+Attempt to sell an out of stock item: Razer deathadder Mouse
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 5
+108: Razer viper mouse stock level: 2
+109: Razer Deathadder V2 Mouse stock level: 5
+109: Razer Deathadder V2 Mouse stock level: 3
+
+Razer's Stock List
+===================
+
+
+101: Razer BlackWidow mechanical keyboard stock level: 3
+102: Razer Tournament keyboard stock level: 3
+103: Razer ornata stock level: 3
+104: Razer blackwidow ultimate stock level: 0
+105: Razer Huntsman Elite stock level: 0
+106: Razer huntsman Mini stock level: 1
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 2
+109: Razer Deathadder V2 Mouse stock level: 3
+110: Razer Siren Cardoid Microphone stock level: 0
+
+stockMan1.getLowstock()
+ The following products are low in stock 101: Razer BlackWidow mechanical keyboard stock level: 3
+ The following products are low in stock 102: Razer Tournament keyboard stock level: 3
+ The following products are low in stock 103: Razer ornata stock level: 3
+ The following products are low in stock 104: Razer blackwidow ultimate stock level: 0
+ The following products are low in stock 105: Razer Huntsman Elite stock level: 0
+ The following products are low in stock 106: Razer huntsman Mini stock level: 1
+ The following products are low in stock 107: Razer deathadder Mouse stock level: 0
+ The following products are low in stock 108: Razer viper mouse stock level: 2
+ The following products are low in stock 109: Razer Deathadder V2 Mouse stock level: 3
+ The following products are low in stock 110: Razer Siren Cardoid Microphone stock level: 0
+    returned Object <object reference>
+StockManager stockMan1 = new StockManager();
+StockDemo stockDem1 = new StockDemo(stockMan1);
+StockManager stockMan1 = new StockManager();
+StockDemo stockDem1 = new StockDemo(stockMan1);
+stockMan1.removeProduct(101);
+101: Razer BlackWidow mechanical keyboard stock level: 0 Removed 

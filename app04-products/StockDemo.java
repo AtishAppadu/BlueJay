@@ -52,7 +52,7 @@ public class StockDemo
         manager.printAllproducts();
         demoSellProduct(); 
         manager.printAllproducts();
-        
+        manager.getLowstock(); 
     }
     
     /**

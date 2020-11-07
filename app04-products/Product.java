@@ -94,7 +94,7 @@ public class Product
     }
 
     
-    public void renameProduct(int id) 
+    public void renameProduct(String name) 
     {   
         this.name = name; 
     }

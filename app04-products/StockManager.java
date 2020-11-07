@@ -28,32 +28,54 @@ public class StockManager
     {
         stock.add(item);
     }
+
+    public ArrayList <Product> getLowstock () 
+    {
+        ArrayList <Product> result = new ArrayList <Product> ();
+        for(Product product: stock) 
+
+        {
+
+            if( product.getQuantity() <= 3)
+            {   
+                System.out.println(" The following products are low in stock "+product); 
+
+        
+            }
+
+             
+
+        
+       }
     
+       return result;
+    }
     
+   
+    
+
     
     public void sellProduct(int id, int quantity)
     {   
         Product product = findProduct(id) ; 
-        
+
         if (product != null) 
         {   
             if (quantity > product.getQuantity()) 
                 quantity = product.getQuantity(); 
             printProduct(id);
-            
+
             for (int count = 0; count <= quantity; count++)
             {   
                 product.sellOne(); 
-                
-        
+
             }
             printProduct(id); 
-            
+
         }
-        
+
     } 
-    
-    
+
     /**
      * Receive a delivery of a particular product.
      * Increase the quantity of the product by the given amount.
@@ -63,14 +85,28 @@ public class StockManager
     public void deliverProduct(int id, int amount)
     {   
         Product product = findProduct(id);
-        
+
         if( product != null ) 
             product.deliver(amount);
         else 
             System.out.println("Product ID not found = "+id); 
-         
+
     }
-    
+
+    public void searchByName(String name) 
+    {   
+        for( Product product : stock) 
+        {   
+            name = name.toLowerCase();
+            String productName = product.getName().toLowerCase(); 
+            if(name.startsWith(productName))
+            {   
+                System.out.println(product); 
+            }
+
+        }
+    } 
+
     /**
      * Try to find a product in the stock with the given id.
      * @return The identified product, or null if there is none
@@ -87,7 +123,7 @@ public class StockManager
         }
         return null;
     }
-    
+
     /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
@@ -110,37 +146,54 @@ public class StockManager
         System.out.println("==================="); 
         System.out.println(); 
         System.out.println(); 
-        
+
         for (Product product : stock)
         {   
-             System.out.println(product); 
-        
+            System.out.println(product); 
+
         }
-        
+
         System.out.println(); 
 
-    
-    
-    
     }
 
-    
     public void printProduct(int id)
     {       
         Product product = findProduct(id); 
-        
+
         if (product != null)
         {   
-             System.out.println(product.toString()); 
+            System.out.println(product.toString()); 
         } 
     }
 
+    public void renameProduct(int id, String newName)
+    {   
+        Product product = findProduct(id); 
+        if (product != null) 
+        {   
+            String oldName = product.getName(); 
+            product.renameProduct(newName);
+
+            if(oldName != product.getName())
+            {   
+                System.out.println(" You have renamed "+ oldName+ " to " + product.getName());
+            }
+        }
+    }
+
+    public void removeProduct(int id) 
+    {
+        Product product = findProduct(id); 
+        if (product != null) 
+        {   
+            this.stock.remove(product); 
+            System.out.print(product + " Removed ");
+        }
+    }
+    
+    
 }
-
-
-
-
-
 
 
 
