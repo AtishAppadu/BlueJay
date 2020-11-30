@@ -46,11 +46,11 @@ public class StockDemo
      */
     public void runDemo()
     {
-        manager.printAllproducts(); 
+        manager.printAllProducts(); 
         demoDeliverproducts(); 
-        manager.printAllproducts();
-        demoSellProduct(); 
-        manager.printAllproducts();
+        manager.printAllProducts();
+        sellProducts(); 
+        manager.printAllProducts();
         manager.getLowstock(); 
     }
     
@@ -73,7 +73,7 @@ public class StockDemo
      * Sell one of the product.
      * 
      */
-    private void demoSellProduct()
+    private void sellProducts()
     {
         int quantity = 0;
         

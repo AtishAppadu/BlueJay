@@ -56,7 +56,7 @@ public class StockApp
     }
     
     /**
-     * 
+     * Menu choices listed to the customer's screen. 
      */
     public void executeMenuChoice(String choice)
     {       
@@ -72,8 +72,47 @@ public class StockApp
         {   
             removeProduct(); 
         }
+    
+    
+          else if(choice.equals("rename"))
+        {
+            //renameProduct();
+        }
+    
+          else if(choice.equals("deliver"))
+        {
+            deliverProduct();
+        }
+    
+    
+        else if(choice.equals("search"))
+        {
+            searchProduct();
+        }
+
+        else if(choice.equals("low-stock"))
+        {
+            lowStock();
+        }
+
+        else if(choice.equals("restock"))
+        {
+            restock();
+        }
+
+        else if(choice.equals("sell"))
+        {
+            sellProduct();
+        }
+    
+       
     }
     
+    
+    /**
+     * Add a product, required to input the name of the product and ID will be automatically
+     * added.
+     */
     public void addProduct()
     {   
         System.out.println("Add a new Product");
@@ -82,13 +121,16 @@ public class StockApp
         System.out.println("Please enter the name of the Product"); 
         String name = input.getInput(); 
         
-        Product product = new Product(nextID, Name);
+        Product product = new Product(nextID, name);
         manager.addProduct(product); 
         
         System.out.println("\nAdded" + product + " to the stock\n");
         nextID++;
     }
     
+    /**
+     * Remove a product, required to input a product ID in order to remove
+     */
     public void removeProduct()
     {   
         System.out.println("Remove an old Product");
@@ -100,6 +142,7 @@ public class StockApp
         int id = Integer.parseInt(number);
         manager.removeProduct(id); 
         
+        System.out.println(" Product removed ");
     }
         
      /**
@@ -112,7 +155,14 @@ public class StockApp
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    PrintAll:   Print all products");
         System.out.println("    Quit:       Quit the program");
-        System.out.println();        
+        System.out.println("    Sell:       Sell Products   ");
+        System.out.println("    Deliver:    Approved Delivery");
+        System.out.println("    Search:     Searching for products");
+        System.out.println("    Low Stock:  Prints all low stock products");
+        System.out.println("    Re-Stock:   Re-stock low stock products  ");
+        System.out.println("    Rename:     Rename a product");
+        
+        System.out.println();           
     }
     
     public void printAllProducts()
@@ -129,5 +179,66 @@ public class StockApp
         System.out.println(" Stock Management Application ");
         System.out.println("    App05: by Atish");
         System.out.println("******************************");
+
+    }
+
+    
+    /**
+     * Deliver a product.
+     */
+    public void deliverProduct()
+    {   
+        System.out.println("Deliver products"); 
+        System.out.println(); 
+    }
+    
+    /**
+     * Search for a product by the name of the product
+     */
+    public void searchProduct()
+    {   
+        System.out.println(" Enter Product Name "); 
+        String Word = input.getInput();
+        
+        manager.searchByName("Product Name");
+    }
+    
+    /**
+     * Sell products, require to input a product ID and amount. 
+     */
+    public void sellProduct()
+    {   
+        System.out.println("Sell Products");
+        System.out.println();
+        
+        int id = input.getInt("Please enter the ID of the Product \n");
+        
+        int amount = input.getInt("Enter the amount /n");
+        
+        manager.sellProduct(id, amount);
+        
+        System.out.println("This product has been sold: " + id); 
+        
+    }
+    
+    /**
+     * This indicates low stock with an amount shown to the customer.
+     */  
+    public void lowStock()
+    {
+        System.out.println("All stock below have 4 or less in stock");
+        manager.getLowStockLevel(0);
+    }
+    
+    /**
+     * Restocking low stock with a required amount and at which minimum number it will be 
+     * restocked. 
+     */ 
+    public void restock()
+    {
+        System.out.println("All products less than 4 will been restocked");
+        int restock = input.getInt("Please enter the restock amount");
+        manager.getLowStockLevel(restock);
     }
 }
+

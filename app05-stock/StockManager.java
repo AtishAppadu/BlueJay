@@ -11,7 +11,9 @@
     {
         // A list of the products.
         private ArrayList<Product> stock;
-    
+        
+        public static final int LOW_STOCK_LEVEL = 4;
+        
         /**
          * Initialise the stock manager.
          */
@@ -135,30 +137,30 @@
         /**
          * Print the product list.
          */
-        public void printAllproducts()
+        public void printAllProducts()
         {   
-        System.out.println(); 
-        System.out.println("Razer's Stock List"); 
-        System.out.println("==================="); 
-        System.out.println(); 
-        System.out.println(); 
-        
-        if(stock.size() == 0)
-        {   
-            System.out.println(" you have no stock currently"); 
-        }
-    
-        for (Product product : stock)
-        {   
-            System.out.println(product); 
-
-        }
-
-        System.out.println(); 
-    
+           System.out.println(); 
+           System.out.println("Razer's  Stock List");
+           System.out.println("#################");  
+           System.out.println();
+           
+         if(stock.size() == 0) 
+         { 
+              System.out.println("out of Stock"); 
+            
+         }
+         else
+        {
+            for (Product product : stock)
+        {
+            System.out.println(product);
+        }   
     }
-
-    public void printProduct(int id)
+    
+    System.out.println(); 
+}
+ 
+   public void printProduct(int id)
     {       
         Product product = findProduct(id); 
 
@@ -202,8 +204,47 @@
         }
     }
     
+     /**
+     * Receive a delivery of a product.
+     * Increase the quantity of the product by the given amount.
+     * @param id The ID of the product.
+     * @param amount The amount to increase the quantity by.
+     */
+    public void deliver(int id, int amount)
+    {
+        Product product = findProduct(id);
+        if(product !=null)
+        {
+            product.deliver(amount);
+            System.out.println("Product Delivered " + product);
+        }
+        else
+        {
+            System.out.println("Cannot find product ID" + id );
+        }
+  
+    }
+   
+    
+    public ArrayList<Product> getLowStockLevel(int restockAmount) 
+    {
+        ArrayList<Product> result = new ArrayList<Product>();
+        
+        for (Product product : stock)
+        {
+            result.add(product);
+            if(product.getQuantity() <= LOW_STOCK_LEVEL)
+            {
+                if(restockAmount >0 && restockAmount >product.getQuantity())
+                    deliver(product.getID(), restockAmount);
+                System.out.println("The listed products are low in stock " + product);
+            }
+        }
+        return result;
+    }
     
 }
+
 
 
 
