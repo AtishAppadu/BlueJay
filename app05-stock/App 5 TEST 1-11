@@ -1,0 +1,200 @@
+
+101: Razer BlackWidow mechanical keyboard stock level: 0
+102: Razer Tournament keyboard stock level: 0
+103: Razer ornata stock level: 0
+104: Razer blackwidow ultimate stock level: 0
+105: Razer Huntsman Elite stock level: 0
+106: Razer huntsman Mini stock level: 0
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 0
+109: Razer Deathadder V2 Mouse stock level: 0
+110: Razer Siren Cardoid Microphone stock level: 0
+200: Razer BlackWidow Keyboard stock level: 0
+201: Razer Siren Mic stock level: 0
+202: Razer Tournament Keyboard stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Add
+> 114
+> Razer Mini Huntsman Keyboard
+
+Added203: Razer Mini Huntsman Keyboard stock level: 0 to the stock
+
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Deliver
+Deliver products
+
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> 111
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Deliver
+Deliver products
+
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Quit
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Deliver
+Deliver products
+
+Enter Product ID
+
+101
+Enter amount for delivery
+5
+101 Has been Delivered 
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> ******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> PrintAll
+
+Razer's  Stock List
+#################
+
+101: Razer BlackWidow mechanical keyboard stock level: 5
+102: Razer Tournament keyboard stock level: 0
+103: Razer ornata stock level: 0
+104: Razer blackwidow ultimate stock level: 0
+105: Razer Huntsman Elite stock level: 0
+106: Razer huntsman Mini stock level: 0
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 0
+109: Razer Deathadder V2 Mouse stock level: 0
+110: Razer Siren Cardoid Microphone stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> 

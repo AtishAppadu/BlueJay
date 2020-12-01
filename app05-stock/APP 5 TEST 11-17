@@ -1,0 +1,200 @@
+103: Razer ornata stock level: 0
+104: Razer blackwidow ultimate stock level: 0
+105: Razer Huntsman Elite stock level: 0
+106: Razer huntsman Mini stock level: 0
+107: Razer deathadder Mouse stock level: 0
+108: Razer viper mouse stock level: 0
+109: Razer Deathadder V2 Mouse stock level: 0
+110: Razer Siren Cardoid Microphone stock level: 0
+
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Search
+> Razer Ornata
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Search 
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Search
+> Razer
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> quit
+Program.main();
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Search
+> Razer
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Low Stock
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Low Stock
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> low stock
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Re-Stock
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> Low Stock
+******************************
+ Stock Management Application 
+    App05: by Atish
+******************************
+
+    Add:        Add a new product
+    Remove:     Remove an old product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+    Sell:       Sell Products   
+    Deliver:    Approved Delivery
+    Search:     Searching for products
+    Low Stock:  Prints all low stock products
+    Re-Stock:   Re-stock low stock products  
+    Rename:     Rename a product
+
+> 
