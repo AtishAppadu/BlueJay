@@ -157,8 +157,8 @@
         }   
     }
     
-    System.out.println(); 
-}
+        System.out.println(); 
+    }
  
    public void printProduct(int id)
     {       
@@ -170,8 +170,8 @@
         } 
     }
 
+                
     
-   
    /** 
     * Able to rename a listed product to a different product. 
     */
@@ -211,7 +211,7 @@
      * @param amount The amount to increase the quantity by.
      */
     public void deliver(int id, int amount)
-    {
+        {
         Product product = findProduct(id);
         if(product !=null)
         {

@@ -43,7 +43,7 @@ public class StockApp
             printHeading();
             printMenuChoices();
            
-            String choice = input.getInput();
+            String choice = input.getInput("please enter Command");
             choice = choice.toLowerCase();
             
             
@@ -115,11 +115,11 @@ public class StockApp
      */
     public void addProduct()
     {   
-        System.out.println("Add a new Product");
-        System.out.println();
         
-        System.out.println("Please enter the name of the Product"); 
-        String name = input.getInput(); 
+        String value = input.getInput("Please enter the ID of the Product"); 
+        int id = Integer.parseInt(value);
+       
+        String name = input.getInput("Please enter Product Name");
         
         Product product = new Product(nextID, name);
         manager.addProduct(product); 
@@ -136,8 +136,8 @@ public class StockApp
         System.out.println("Remove an old Product");
         System.out.println();
         
-        System.out.println("Please enter the ID of the product"); 
-        String number = input.getInput(); 
+        
+        String number = input.getInput("Please enter the ID of the product"); 
         
         int id = Integer.parseInt(number);
         manager.removeProduct(id); 
@@ -190,6 +190,16 @@ public class StockApp
     {   
         System.out.println("Deliver products"); 
         System.out.println(); 
+        
+        int id = input.getInt("Enter Product ID");
+        
+        int amount = input.getInt("Enter amount for delivery");
+        
+        manager.deliverProduct(id, amount);
+        
+        System.out.println(id + " Has been Delivered " );
+        
+        
     }
     
     /**
@@ -197,10 +207,10 @@ public class StockApp
      */
     public void searchProduct()
     {   
-        System.out.println(" Enter Product Name "); 
-        String Word = input.getInput();
         
-        manager.searchByName("Product Name");
+        String Word = input.getInput("Enter Product Name");
+        
+        manager.searchByName(Word);
     }
     
     /**
